@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>    <html class="ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--默认极速内核,ie标准内核打开-->
+    <meta name="renderer" content="webkit,ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,IE=8,IE=7,IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>威廉老师 - 首页</title>
+    <link href="css/index.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--<script src="js/jquery.fullPage.min.js"></script>-->
+    <script src="js/fullPage.js"></script>
+    <script src="js/placeholder/jquery.placeholder.js"></script>
+    <script src="js/index.js"></script>
+    <script src="seajs/sea.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="seamodel/page.js"></script>
+    <script type="text/javascript">
+        var t1 = new Date().getTime();
+        window.onload = function () {
+            console.log((new Date().getTime() - t1) + " ms");
+        }
+
+        $(function () {
+            $("[flag='move2']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page2", html2);
+                });
+            });
+
+            $("[flag='move3']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page3", html3);
+                });
+            });
+
+            $("[flag='move4']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page4", html4);
+                });
+            });
+
+            $("[flag='move5']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page5", html5);
+                });
+            });
+
+            $("[flag='move6']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page6", html6);
+                });
+            });
+
+            $("[flag='move7']").click(function () {
+                seajs.use('seamodel/page2.js', function (page2) {
+                    page2.init("div_page7", html7);
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="navPart">
+        <div class="baseDv"></div>
+        <div id="moveDv"></div>
+        <ul class="blockDv">
+            <li class="item active" flag="move1" data-page="0" data-flag="itemNo1"></li>
+            <li class="item" flag="move2" data-page="1" data-flag="itemNo2"></li>
+            <li class="item" flag="move3" data-page="2" data-flag="itemNo3"></li>
+            <li class="item" flag="move4" data-page="3" data-flag="itemNo4"></li>
+            <li class="item" flag="move5" data-page="4" data-flag="itemNo5"></li>
+            <li class="item" flag="move6" data-page="5" data-flag="itemNo6"></li>
+            <li class="item full" flag="move7" data-page="6" data-flag="itemNo7"></li>
+        </ul>
+        <div class="nav-notice">
+            <div id="itemNo1" class="ch-dv ch-dv1"><i></i>首页</div>
+            <div id="itemNo2" class="ch-dv ch-dv2"><i></i>名师介绍</div>
+            <div id="itemNo3" class="ch-dv ch-dv3"><i></i>适合群体</div>
+            <div id="itemNo4" class="ch-dv ch-dv4"><i></i>课程特色</div>
+            <div id="itemNo5" class="ch-dv ch-dv5"><i></i>学员评价</div>
+            <div id="itemNo6" class="ch-dv ch-dv6"><i></i>课程安排</div>
+            <div id="itemNo7" class="ch-dv ch-dv7"><i></i>咨询报名</div>
+        </div>
+    </div>
+    <div class="logoPart">
+        <div class="rRlogo">
+            <img src="images/RRlogo.png" />
+        </div>
+        <div class="chatWayDv">
+            <div class="carrot"><img src="images/carrot.png" /></div>
+            <div class="rowDv">
+                <div class="left leftFont">电话：</div>
+                <div class="left rightFont">021-31576348</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rowDv">
+                <div class="left leftFont">QQ：</div>
+                <div class="left rightFont">1406786634(赵老师)<br />207506653(邵老师)</div>
+                <div class="clear"></div>
+            </div>
+            <div class="rowDv">
+                <div class="left leftFont">QQ交流群：</div>
+                <div class="left rightFont">210505526（人人留学雅思讲座）</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bullonPart">
+        <img src="images/bullon.png" style="visibility: hidden;" />
+
+        <div class="grayBullon1">
+            <img src="images/grayBullon1.png" />
+        </div>
+        <div class="grayBullon2">
+            <img src="images/grayBullon2.png" />
+        </div>
+        <div class="grayBullon3">
+            <img src="images/grayBullon3.png" />
+        </div>
+        <div class="listen">
+            <img src="images/listen.png" />
+        </div>
+        <div class="say">
+            <img src="images/say.png" />
+        </div>
+        <div class="read">
+            <img src="images/read.png" />
+        </div>
+        <div class="write">
+            <img src="images/write.png" />
+        </div>
+        <div class="ielts">
+            <img src="images/ielts.png" />
+        </div>
+    </div>
+    <div id="pageContain">
+        <div class="page page1 current">
+            <div class="contain">
+                <div class="centerImg">
+                    <div class="nameIn">
+                        <img src="images/faceImgG.png" class="faceImg" />
+                        <div class="nameFont">Mr. Williams</div>
+                    </div>
+                    <img src="images/pageOneImgFont.png" class="pageOneImgFont" />
+                    <div class="btnDv">
+                        <button id="goToPage7">我要预约<span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page page2" id="div_page2">
+            
+        </div>
+
+        <div class="page page3" id="div_page3">
+        </div>
+
+        <div class="page page4" id="div_page4">
+
+        </div>
+
+        <div class="page page5" id="div_page4">
+        </div>
+
+        <div class="page page6" id="div_page4">
+            
+        </div>
+
+        <div class="page page7" id="div_page4">
+            
+        </div>
+    </div>
+    <div class="successDv"></div>
+    <div class="successPart">
+        <img src="images/success.png" class="successImg" />
+        <img src="images/close.png" class="close" id="closeSuccessDv" />
+    </div>
+
+</body>
+</html>
